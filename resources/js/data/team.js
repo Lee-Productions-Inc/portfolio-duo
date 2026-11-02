@@ -5,7 +5,7 @@ export const team = [
     id: '01',
     name: 'Lee Bron Godoy',
     role: 'Web Developer',
-    photo: '/assets/images/801822187_1536449821587499_8509382648599056605_n.jpg', // change to your own photo path
+    photo: '/assets/images/801822187_1536449821587499_8509382648599056605_n.jpg', 
     summary: 'Exploring web development, responsive interfaces, and thoughtful digital experiences.',
     skills: {
       Languages: ['HTML5', 'CSS3', 'JavaScript', 'SQL', 'PHP', 'Python', 'C++', 'Java'],

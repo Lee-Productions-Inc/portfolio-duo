@@ -1,12 +1,12 @@
 import {Head} from '@inertiajs/react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import Education from '../components/Education';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Navbar from '../components/portfolio/Navbar';
+import Hero from '../components/portfolio/Hero';
+import About from '../components/portfolio/About';
+import Skills from '../components/portfolio/Skills';
+import Projects from '../components/portfolio/Projects';
+import Education from '../components/portfolio/Education';
+import Contact from '../components/portfolio/Contact';
+import Footer from '../components/portfolio/Footer';
 export default function Portfolio({projects, canManageProjects = false}){
   return <>
     <Head title="Home" />

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, router } from '@inertiajs/react';
-import ManagementLayout from '../../components/ManagementLayout';
-import ProjectCover from '../../components/ProjectCover';
+import ManagementLayout from '../../components/portfolio/management/ManagementLayout';
+import ProjectCover from '../../components/portfolio/ProjectCover';
 
 const statusLabels = { planned: 'Planned', in_progress: 'In progress', completed: 'Completed' };
 
