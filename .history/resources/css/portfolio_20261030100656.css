@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@source "../js/**/*.jsx";
+@source "../js/**/*.js";
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+a, button, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .6; }
+/* The original portfolio's compact panel and technical accent treatment. */
+.panel { border:1px solid #293a48; background:#111923; }
+.panel-muted { border:1px solid #263542; background:#0e151e; }
+.eyebrow { font-size:10px; letter-spacing:.14em; font-weight:700; text-transform:uppercase; color:#bd986b; }
+.field-label { display:block; margin-bottom:7px; font-size:12px; font-weight:600; color:#bed0df; }
+.field-input { display:block; width:100%; min-height:45px; border:1px solid #364c60; background:#0b141e; padding:10px 12px; color:#e9f1f8; border-radius:0; outline:none; }
+.field-input:focus { border-color:#a9daf8; box-shadow:0 0 0 2px rgba(169,218,248,.10); }
+.field-input[aria-invalid="true"] { border-color:#d99b8c; }
+.field-error { margin-top:5px; font-size:12px; color:#ffb8ae; }
+.btn-main { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:42px; padding:10px 17px; background:#a9daf8; color:#0b1824; border:1px solid #a9daf8; font-size:12px; font-weight:800; text-decoration:none; transition:.2s; }
+.btn-main:hover { background:#d5edfb; }
+.btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:42px; padding:10px 17px; background:transparent; color:#cbe8f7; border:1px solid #536d84; font-size:12px; font-weight:700; text-decoration:none; transition:.2s; }
+.btn-outline:hover { border-color:#a9daf8; background:#152637; }
+.btn-danger { border:1px solid #a86865; padding:10px 15px; color:#ffb8ae; font-size:12px; font-weight:700; }
+.btn-danger:hover { background:#452727; }
+.status-success { border:1px solid #537868; background:#132a27; color:#b3eed4; padding:12px 15px; font-size:13px; }
+.person-photo { width:100%; aspect-ratio:4/3; object-fit:cover; background:#16212b; }
+dialog::backdrop { background:rgba(3,7,12,.85); backdrop-filter:blur(5px); }

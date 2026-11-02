@@ -1,0 +1,13 @@
+{
+  "resources/css/portfolio.css": {
+    "file": "assets/portfolio-C1ONpaJU.css",
+    "src": "resources/css/portfolio.css",
+    "isEntry": true
+  },
+  "resources/js/portfolio-app.jsx": {
+    "file": "assets/portfolio-app-CbEOvj8o.js",
+    "name": "portfolio-app",
+    "src": "resources/js/portfolio-app.jsx",
+    "isEntry": true
+  }
+}
