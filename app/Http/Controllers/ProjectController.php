@@ -11,19 +11,19 @@ use Inertia\Response;
 
 class ProjectController extends Controller
 {
-    public function index(): Response
+    public function index(): Response //here
     {
         return Inertia::render('Projects/Index', [
             'projects' => Project::query()->latest()->get(),
         ]);
     }
 
-    public function create(): Response
+    public function create(): Response //here
     {
         return Inertia::render('Projects/Create');
     }
 
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request): RedirectResponse //here
     {
         $data = $request->validate($this->rules(), $this->messages());
         $file = $data['image'] ?? null;
@@ -35,12 +35,12 @@ class ProjectController extends Controller
         return to_route('projects.index')->with('success', 'Project created successfully.');
     }
 
-    public function edit(Project $project): Response
+    public function edit(Project $project): Response //here
     {
         return Inertia::render('Projects/Edit', ['project' => $project]);
     }
 
-    public function update(Request $request, Project $project): RedirectResponse
+    public function update(Request $request, Project $project): RedirectResponse //here
     {
         $data = $request->validate($this->rules($project), $this->messages());
         $file = $data['image'] ?? null;
@@ -56,7 +56,7 @@ class ProjectController extends Controller
         return to_route('projects.index')->with('success', 'Project updated successfully.');
     }
 
-    public function destroy(Project $project): RedirectResponse
+    public function destroy(Project $project): RedirectResponse //here
     {
         $image = $project->image_path;
         $project->delete();
@@ -66,7 +66,7 @@ class ProjectController extends Controller
         return to_route('projects.index')->with('success', 'Project deleted successfully.');
     }
 
-    private function rules(?Project $project = null): array
+    private function rules(?Project $project = null): array //explain
     {
         return [
             'title' => ['required', 'string', 'min:3', 'max:120', Rule::unique('projects', 'title')->ignore($project?->id)],

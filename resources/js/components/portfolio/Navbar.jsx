@@ -32,7 +32,7 @@ export default function Navbar() {
     <div className="mx-auto flex h-19 w-[calc(100%-38px)] max-w-290 items-center justify-between gap-5 md:w-[calc(100%-76px)]">
       <a href="#home" onClick={() => setMenuOpen(false)} className="inline-flex items-center gap-3 text-[13px] font-semibold tracking-tight text-[#e5eaf1] hover:text-[#a9daf8]">
         <span aria-hidden="true" className="text-2xl leading-none text-[#a9dbf8]">✦</span>
-        <span>GODOY <span className="text-[#b18c61]">/</span> PARTNER</span>
+        <span>GODOY <span className="text-[#b18c61]">/</span> ESQUIVEL</span>
       </a>
       <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
         {links.map(([label,id]) => <a key={id} href={`#${id}`} aria-current={active===id?'page':undefined} className="relative py-2.5 text-xs text-[#aab4c1] transition-colors hover:text-[#a9daf8] aria-[current=page]:text-[#a9daf8] after:absolute after:bottom-1 after:left-0 after:h-px after:w-0 after:bg-[#a9daf8] after:transition-[width] hover:after:w-full aria-[current=page]:after:w-full">{label}</a>)}
